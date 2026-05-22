@@ -113,7 +113,6 @@ svg {
     gap: var(--space-sm);
     padding: var(--space-md);
     border-left: 4px solid #fff;
-    border-radius: 20px;
 }
 
 .to-analise-link>a {
@@ -200,8 +199,10 @@ header {
     background-color: var(--btn-blue);
 }
 
-@media (max-width: 1200px){
-    #search-docs-input, .filter-icon > svg{
+@media (max-width: 1200px) {
+
+    #search-docs-input,
+    .filter-icon>svg {
         width: 80%;
     }
 }
@@ -270,29 +271,47 @@ header {
         text-align: center;
     }
 
-    .title-analysis{
+    .title-analysis {
         text-align: center;
     }
 
-    .detail{
+    .detail {
         flex-direction: column !important;
         align-items: center;
     }
 
-    .projects-title-container{
+    .projects-title-container {
         text-align: center;
     }
+
 }
 
 @media (max-width: 460px) {
+    body {
+        flex-direction: column;
+    }
+
+    .to-analise-link{
+        width: auto;
+    }
+
+    .links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .statistics {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)) !important;
     }
-    #search-docs-input, .filter-icon > svg{
+
+    #search-docs-input,
+    .filter-icon>svg {
         width: 80%;
     }
 
-    .doc-container, .document-actions-container{
+    .doc-container,
+    .document-actions-container {
         text-align: center;
     }
 
