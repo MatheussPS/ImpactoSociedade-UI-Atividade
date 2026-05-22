@@ -1,358 +1,286 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sistema ImpactoSociedade</title>
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <aside>
-      <nav>
-        <div class="links-container">
-          <ul class="links">
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-house-icon lucide-house"
-              >
-                <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
-                <path
-                  d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
-                />
-              </svg>
-              <p class="link-name">Home</p>
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-log-out-icon lucide-log-out"
-              >
-                <path d="m16 17 5-5-5-5" />
-                <path d="M21 12H9" />
-                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
-              </svg>
-              <p class="link-name">Logout</p>
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-lock-keyhole-icon lucide-lock-keyhole"
-              >
-                <circle cx="12" cy="16" r="1" />
-                <rect x="3" y="10" width="18" height="12" rx="2" />
-                <path d="M7 10V7a5 5 0 0 1 10 0v3" />
-              </svg>
-              <p class="link-name">Alterar senha</p>
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-user-round-icon lucide-user-round"
-              >
-                <circle cx="12" cy="8" r="5" />
-                <path d="M20 21a8 8 0 0 0-16 0" />
-              </svg>
-              <p class="link-name">Dados Pessoais</p>
-            </li>
-            <li>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-tag-icon lucide-tag"
-              >
-                <path
-                  d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"
-                />
-                <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
-              </svg>
-              <p class="link-name">Descritores</p>
-            </li>
-            <li class="to-analise-link">
-              <div class="to-analise-link-container">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-file-text-icon lucide-file-text"
-                >
-                  <path
-                    d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
-                  />
-                  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                  <path d="M10 9H8" />
-                  <path d="M16 13H8" />
-                  <path d="M16 17H8" />
-                </svg>
-                <p class="link-name">Documentos para Analisar</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </aside>
-    <main>
-      <header>
-        <div class="header-content">
-          <div class="logo-container">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-file-text-icon lucide-file-text"
-            >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema ImpactoSociedade</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <aside>
+    <nav>
+      <div class="links-container">
+        <ul class="links">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-house-icon lucide-house">
+              <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
               <path
-                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
-              />
+                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            </svg>
+            <a href="#" class="link-name">Home</a>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-log-out-icon lucide-log-out">
+              <path d="m16 17 5-5-5-5" />
+              <path d="M21 12H9" />
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+            </svg>
+            <a href="#" class="link-name">Logout</a>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-lock-keyhole-icon lucide-lock-keyhole">
+              <circle cx="12" cy="16" r="1" />
+              <rect x="3" y="10" width="18" height="12" rx="2" />
+              <path d="M7 10V7a5 5 0 0 1 10 0v3" />
+            </svg>
+            <a href="#" class="link-name">Alterar senha</a>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-user-round-icon lucide-user-round">
+              <circle cx="12" cy="8" r="5" />
+              <path d="M20 21a8 8 0 0 0-16 0" />
+            </svg>
+            <a href="#" class="link-name">Dados Pessoais</a>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-tag-icon lucide-tag">
+              <path
+                d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+              <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+            </svg>
+            <a href="#" class="link-name">Descritores</a>
+          </li>
+          <li class="to-analise-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-file-text-icon lucide-file-text">
+              <path
+                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
               <path d="M14 2v5a1 1 0 0 0 1 1h5" />
               <path d="M10 9H8" />
               <path d="M16 13H8" />
               <path d="M16 17H8" />
             </svg>
+            <a href="#" class="link-name">Documentos para Analisar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </aside>
+  <main>
+    <header>
+      <div class="header-content">
+        <div class="logo-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-file-text-icon lucide-file-text">
+            <path
+              d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+            <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+            <path d="M10 9H8" />
+            <path d="M16 13H8" />
+            <path d="M16 17H8" />
+          </svg>
+        </div>
+        <div class="title-info-container">
+          <h1 class="title">Sistema ImpactoSociedade.com.br</h1>
+          <p class="subtitle">
+            Plataforma para análise e gestão de documentos académicos e
+            projetos de pesquisa
+          </p>
+        </div>
+      </div>
+    </header>
+    <section id="projects">
+      <div class="projects-content">
+        <div class="title-info-container">
+          <h2 class="title">Projetos</h2>
+          <p class="subtitle">
+            Selecione um projeto para visualizar os documentos associados.
+          </p>
+        </div>
+        <input id="search-projects" type="text" placeholder="Buscar projeto..." />
+      </div>
+      <div class="actions-container">
+        <div class="actions">
+          <button class="action">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-plus-icon lucide-plus">
+              <path d="M5 12h14" />
+              <path d="M12 5v14" />
+            </svg>Criar projeto</button><button class="action">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-square-pen-icon lucide-square-pen">
+              <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+              <path
+                d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z" />
+            </svg>Editar projeto</button><button class="action">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-chart-column-icon lucide-chart-column">
+              <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+              <path d="M18 17V9" />
+              <path d="M13 17V5" />
+              <path d="M8 17v-3" />
+            </svg>Relatório do projeto</button><button class="action open-project">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-folder-icon lucide-folder">
+              <path
+                d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
+            </svg>Abrir projeto
+          </button>
+        </div>
+      </div>
+      <div class="analysis-results-container">
+        <div class="analysis-container">
+          <div class="details-container">
+            <details class="selected">
+              <summary>
+                Análise PPGDTS - 2021/2024
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-circle-check icon-selected">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m9 12 2 2 4-4" />
+                </svg>
+              </summary>
+              <p>Este texto aparece quando o usuário clica.</p>
+            </details>
+            <details>
+              <summary>Análise PPGDTS UFPR Litoral - Total</summary>
+              <p>Este texto aparece quando o usuário clica.</p>
+            </details>
+            <details>
+              <summary>Análise PPGDTS UFPR Litoral - Total</summary>
+              <p>Este texto aparece quando o usuário clica.</p>
+            </details>
+            <details>
+              <summary>Análise PPGDTS UFPR Litoral - Total</summary>
+              <p>Este texto aparece quando o usuário clica.</p>
+            </details>
+            <details>
+              <summary>Análise PPGDTS UFPR Litoral - Total</summary>
+              <p>Este texto aparece quando o usuário clica.</p>
+            </details>
           </div>
-          <div class="title-info-container">
-            <h1 class="title">Sistema ImpactoSociedade.com.br</h1>
-            <p class="subtitle">
-              Plataforma para análise e gestão de documentos académicos e
-              projetos de pesquisa
+        </div>
+        <div class="results-container">
+          <div class="projects-title-container">
+            <h3>Resultados por ODS</h3>
+            <p>
+              Selecione um projeto para visualizaros indicadores associados
+              aos ODS
             </p>
           </div>
-        </div>
-      </header>
-      <section id="projects">
-        <div class="projects-content">
-          <div class="title-desc">
-            <h1 class="title">Projetos</h1>
-            <p class="subtitle">
-              Selecione um projeto para visualizar os documentos associados.
-            </p>
-          </div>
-          <input
-            id="search-projects"
-            type="text"
-            placeholder="Buscar projeto..."
-          />
-        </div>
-        <div class="actions-container">
-          <div class="actions">
-            <button class="action">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-plus-icon lucide-plus"
-              >
-                <path d="M5 12h14" />
-                <path d="M12 5v14" /></svg
-              >Criar projeto</button
-            ><button class="action">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-square-pen-icon lucide-square-pen"
-              >
-                <path
-                  d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
-                />
-                <path
-                  d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"
-                /></svg
-              >Editar projeto</button
-            ><button class="action">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-chart-column-icon lucide-chart-column"
-              >
-                <path d="M3 3v16a2 2 0 0 0 2 2h16" />
-                <path d="M18 17V9" />
-                <path d="M13 17V5" />
-                <path d="M8 17v-3" /></svg
-              >Relatório do projeto</button
-            ><button class="action open-project">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-folder-icon lucide-folder"
-              >
-                <path
-                  d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
-                /></svg
-              >Abrir projeto
-            </button>
-          </div>
-        </div>
-        <div class="analysis-results-container">
-          <div class="analysis-container">
-            <div class="details-container">
-              <details>
-                <summary>Análise PPGDTS- 2021/2024</summary>
-                <p>Este texto aparece quando o usuário clica.</p>
-              </details>
-              <details>
-                <summary>Análise PPGDTS- 2021/2024</summary>
-                <p>Este texto aparece quando o usuário clica.</p>
-              </details>
-              <details>
-                <summary>Análise PPGDTS- 2021/2024</summary>
-                <p>Este texto aparece quando o usuário clica.</p>
-              </details>
-              <details>
-                <summary>Análise PPGDTS- 2021/2024</summary>
-                <p>Este texto aparece quando o usuário clica.</p>
-              </details>
-              <details>
-                <summary>Análise PPGDTS- 2021/2024</summary>
-                <p>Este texto aparece quando o usuário clica.</p>
-              </details>
+          <div class="dashboard-content">
+            <div class="statistics">
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">1</p>
+                <p class="desc-card">12 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">2</p>
+                <p class="desc-card">8 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">3</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">4</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">5</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">6</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">7</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">8</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">9</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">10</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">11</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">12</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">13</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">14</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">15</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">16</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+              <div class="card-statistics">
+                <small class="ods-label">ODS</small>
+                <p class="ods-number">17</p>
+                <p class="desc-card">15 documentos</p>
+              </div>
+
             </div>
           </div>
-          <div class="results-container">
-            <div class="projects-title-container">
-              <h1>Resultados por ods</h1>
-              <p>
-                Selecione um projeto para visualizaros indicadores associados
-                aos ODS
-              </p>
-            </div>
-            <div class="dashboard-content">
-        <div class="statistics">
-          <div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div><div class="card-statistics">
-            <p>ODS</p>
-            <p class="desc-card">12 documentos</p>
-          </div>
-          
         </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
+    </section>
+  </main>
+</body>
+
 </html>
