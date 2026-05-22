@@ -20,7 +20,7 @@
     min-height: 5vh;
     border-radius: 10px;
     border: var(--color-dark-grey) 1px solid;
-    padding: var(--space-sm);
+    padding: var(--space-md) var(--space-sm) var(--space-md) var(--space-sm);
 }
 
 .actions-container{
@@ -37,31 +37,22 @@
     padding: var(--space-md);
 }
 
-.action{
-    display: flex;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-sm);
+.project-btn{
     border: var(--btn-blue) 1px solid;
     border-radius: 10px;
     background-color: var(--actions-bkg-blue);
-    padding: var(--space-sm);
-    font-weight: bold;
-    transition: all 0.2s ease-in-out;
 }
 
-.action > svg, .action{
+.project-btn > svg, .action{
     color: var(--btn-blue);
 }
 
-.action:hover{
-    transform: scale(1.02);
+.project-btn:hover{
     background-color: var(--btn-blue);
     color:  var(--actions-bkg-blue);
 }
 
-.action:hover > svg {
+.project-btn:hover > svg {
     color:  var(--actions-bkg-blue);
 }
 
@@ -88,10 +79,12 @@
     display: flex;
     justify-content: space-between;
     gap: var(--space-md);
+    width: 100%;
 }
 
 .analysis-container{
     display: flex;
+    flex: 0.5;
     flex-direction: column;
     border: 1px solid var(--color-dark-grey);
     border-radius: 20px;
@@ -102,6 +95,10 @@
 .details-container{
     display: flex;
     flex-direction: column;
+}
+.summary-align-analysis{
+    display: flex;
+    align-items: center;
 }
 
 details > summary {
@@ -115,25 +112,6 @@ details > summary {
     border-bottom: 1px solid var(--color-grey);
 }
 
-details > summary::-webkit-details-marker {
-    display: none;
-}
-
-details > summary::before {
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 7px solid currentColor;
-    flex-shrink: 0;
-    transition: transform 0.2s;
-}
-
-details[open] > summary::before {
-    transform: rotate(90deg);
-}
 
 details.selected > summary {
     background-color: var(--actions-bkg-blue);
@@ -147,9 +125,6 @@ details.selected > summary {
     color: var(--btn-blue);
 }
 
-details.selected > summary::before {
-    display: none;
-}
 
 details > p {
     padding: var(--space-sm) var(--space-md);
@@ -176,7 +151,7 @@ summary{
 }
 
 .card-statistics {
-    aspect-ratio: 5/3;
+    aspect-ratio: 6/4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,7 +178,6 @@ summary{
     color: #000 !important;
     font-size: 0.65rem;
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
     color: var(--btn-blue);
 }
@@ -222,7 +196,7 @@ summary{
 }
 
 .results-container {
-    flex: 1;
+    flex: 0.5;
     min-width: 0;
     border: 1px solid var(--color-dark-grey);
     padding: var(--space-md);

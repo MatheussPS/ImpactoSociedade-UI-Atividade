@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema ImpactoSociedade</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/analysis.css">
+</head>
+
+<body>
+    <aside>
+        <nav>
+            <div class="links-container">
+                <ul class="links">
+                    <li onclick="location.href='index.html'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-house-icon lucide-house">
+                            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                            <path
+                                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        </svg>
+                        <a href="#" class="link-name">Home</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-log-out-icon lucide-log-out">
+                            <path d="m16 17 5-5-5-5" />
+                            <path d="M21 12H9" />
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                        </svg>
+                        <a href="#" class="link-name">Logout</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-lock-keyhole-icon lucide-lock-keyhole">
+                            <circle cx="12" cy="16" r="1" />
+                            <rect x="3" y="10" width="18" height="12" rx="2" />
+                            <path d="M7 10V7a5 5 0 0 1 10 0v3" />
+                        </svg>
+                        <a href="#" class="link-name">Alterar senha</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-user-round-icon lucide-user-round">
+                            <circle cx="12" cy="8" r="5" />
+                            <path d="M20 21a8 8 0 0 0-16 0" />
+                        </svg>
+                        <a href="#" class="link-name">Dados Pessoais</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-tag-icon lucide-tag">
+                            <path
+                                d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+                            <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+                        </svg>
+                        <a href="#" class="link-name">Descritores</a>
+                    </li>
+                    <li class="to-analise-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-file-text-icon lucide-file-text">
+                            <path
+                                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+                            <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                            <path d="M10 9H8" />
+                            <path d="M16 13H8" />
+                            <path d="M16 17H8" />
+                        </svg>
+                        <a href="#" class="link-name">Documentos para Analisar</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+    <main>
+        <header>
+            <div class="header-content">
+                <div class="logo-container logo" onclick="location.href='index.html'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-file-text-icon lucide-file-text">
+                        <path
+                            d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+                        <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                        <path d="M10 9H8" />
+                        <path d="M16 13H8" />
+                        <path d="M16 17H8" />
+                    </svg>
+                </div>
+                <div class="title-info-container">
+                    <h1 class="title">Sistema ImpactoSociedade.com.br</h1>
+                    <p class="subtitle">
+                        Plataforma para análise e gestão de documentos académicos e
+                        projetos de pesquisa
+                    </p>
+                </div>
+            </div>
+        </header>
+        <section id="analysis">
+            <div class="analysis-container-f">
+                <div class="analysis-content">
+                    <div class="logo-analysis logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-folder-icon lucide-folder">
+                            <path
+                                d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
+                        </svg>
+                    </div>
+                    <div class="analysis-inf">
+                        <div class="title-analysis">
+                            <h3>Análise PPGDTS - 2021/2024</h3>
+                        </div>
+                        <div class="analysis-desc">
+                            <p><span class="bold">ID:</span> <span class="inf">43</span></p>
+                            <p><span class="bold">Ano inicial: </span><span class="inf">2021</span></p>
+                            <p><span class="bold">Ano final: </span><span class="inf">2024</span></p>
+                            <p><span class="bold">Total de coumentos: </span><span class="total-inf">4</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-back-to-analysis">
+                    <button class="action back-to-analysis-btn" onclick="location.href='index.html'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-arrow-left-icon lucide-arrow-left">
+                            <path d="m12 19-7-7 7-7" />
+                            <path d="M19 12H5" />
+                        </svg>
+                        Voltar para análise
+                    </button>
+                </div>
+            </div>
+            <div class="document-actions-container">
+                <h2>Ações do documento</h2>
+                <div class="document-actions">
+                    <button class="action document-action">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-plus-icon lucide-plus">
+                            <path d="M5 12h14" />
+                            <path d="M12 5v14" />
+                        </svg>
+                        Criar documento
+                    </button>
+                    <button class="action document-action">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-cloud-upload-icon lucide-cloud-upload">
+                            <path d="M12 13v8" />
+                            <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+                            <path d="m8 17 4-4 4 4" />
+                        </svg>
+                        Carregar arquivo
+                    </button>
+                    <button class="action document-action">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-pen-icon lucide-pen">
+                            <path
+                                d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+                        </svg>
+                        Editar documento
+                    </button>
+                    <button class="action document-action">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-trash2-icon lucide-trash-2" style="color: #ff0000;">
+                            <path d="M10 11v6" />
+                            <path d="M14 11v6" />
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6" />
+                            <path d="M3 6h18" />
+                            <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+                        </svg>
+                        Excluir documento
+                    </button>
+                    <button class="action document-action">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-folder-icon lucide-folder">
+                            <path
+                                d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
+                        </svg>
+                        Dados estatísticos
+                    </button>
+                </div>
+            </div>
+            <div class="to-analyze-document-detils-container">
+                <div class="analyze-document doc-container">
+                    <h2>Documentos a analisar</h2>
+                    <div class="search-docs-container">
+                        <input type="text" name="Search" id="search-docs-input" placeholder="Buscar documento...">
+                        <div class="filter-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-funnel-icon lucide-funnel">
+                                <path
+                                    d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z" />
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="documents-list">
+                        <div class="document">
+                            <div class="doc-details-content">
+                                <div class="doc-detail doc-detail-selected">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-file-text-icon lucide-file-text">
+                                        <path
+                                            d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+                                        <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                                        <path d="M10 9H8" />
+                                        <path d="M16 13H8" />
+                                        <path d="M16 17H8" />
+                                    </svg>
+                                    <p class="doc-desc doc-desc-selected">SIM, O MAR É PRA TODOS: UMA ANÁLISE DAS
+                                        PERCEPÇÕES DOS USUÁRIOS SOBRE A ...</p>
+                                </div>
+                            </div>
+                            <div class="doc-details-content">
+                                <div class="doc-detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-file-text-icon lucide-file-text">
+                                        <path
+                                            d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+                                        <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                                        <path d="M10 9H8" />
+                                        <path d="M16 13H8" />
+                                        <path d="M16 17H8" />
+                                    </svg>
+                                    <p class="doc-desc">DESENVOLVIMENTO E COMUNICAÇÃO MIDIÁTICA: A COBERTURA DE
+                                        POLÍTICAS PÚBLICAS</p>
+                                </div>
+                            </div>
+                            <div class="doc-details-content">
+                                <div class="doc-detail">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-file-text-icon lucide-file-text">
+                                        <path
+                                            d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+                                        <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                                        <path d="M10 9H8" />
+                                        <path d="M16 13H8" />
+                                        <path d="M16 17H8" />
+                                    </svg>
+                                    <p class="doc-desc">A REDE DE APOIO DOS CATADORES DE MATERIAL RECICLÁVEL</p>
+                                </div>
+                            </div>
+                            <div class="doc-details-content">
+                                <div class="doc-detail last">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-file-text-icon lucide-file-text">
+                                        <path
+                                            d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+                                        <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                                        <path d="M10 9H8" />
+                                        <path d="M16 13H8" />
+                                        <path d="M16 17H8" />
+                                    </svg>
+                                    <p class="doc-desc">A REDE DE APOIO DOS CATADORES DE MATERIAL RECICLÁVEL</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="p-opacity">Mostrando 1-10 de 4 documentos</p>
+                   
+                </div>
+                <div class="document-details doc-container">
+                    <h2>Detalhes do documento</h2>
+                    <div class="document-details-content">
+                        <div class="document-detail">
+                            <div class="detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-book-open-icon lucide-book-open">
+                                    <path d="M12 7v14" />
+                                    <path
+                                        d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+                                </svg>
+                                <div class="detail-key">Titulo: </div>
+                                <p>SIM, O MAR É PRA TODOS: UMA ANÁLISE DAS PERCEPÇÕES DOS USUÁRIOS SOBRE A GESTÃO DA
+                                    PESCA ARTESANAL E
+                                    MARICULTURA NA BAÍA DE GUARATUBA/PR</p>
+                            </div>
+                        </div>
+                        <div class="document-detail">
+                            <div class="detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-user-round-icon lucide-user-round">
+                                    <circle cx="12" cy="8" r="5" />
+                                    <path d="M20 21a8 8 0 0 0-16 0" />
+                                </svg>
+                                <div class="detail-key">Discente: </div>
+                                <p>IVAN RICARDO BATISTA TRAVASSOS</p>
+                            </div>
+                        </div>
+                        <div class="document-detail">
+                            <div class="detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-user-round-icon lucide-user-round">
+                                    <circle cx="12" cy="8" r="5" />
+                                    <path d="M20 21a8 8 0 0 0-16 0" />
+                                </svg>
+                                <div class="detail-key">Orientador: </div>
+                                <p>ELAINE CRISTINA DE OLIVEIRA MENEZES</p>
+                            </div>
+                        </div>
+                        <div class="document-detail">
+                            <div class="detail">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-calendar-icon lucide-calendar">
+                                    <path d="M8 2v4" />
+                                    <path d="M16 2v4" />
+                                    <rect width="18" height="18" x="3" y="4" rx="2" />
+                                    <path d="M3 10h18" />
+                                </svg>
+                                <div class="detail-key">Ano de publicação: </div>
+                                <p>2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="document-summary">
+                        <div class="document-summary-content">
+                            <p class="summary-tile">Resumo</p>
+                            <p class="summary-text">A atividade pesqueira se encontra historicamente atrasada no que diz
+                                respeito às
+                                tecnologias
+                                e politicas
+                                comparadas ao meio rural, por exemplo, os anseios dos usuários que ainda sofrem por
+                                serem
+                                pouco
+                                considerados nos processos de tomada de decisão, relacionada a atividade de pesca e
+                                maricultura. Sendo
+                                assim, o presente trabalho tem como objetivo analisar a percepção dos pescadores e
+                                maricultores sobre a
+                                gestão das atividades na baía de Guaratuba, no sentido de compreender de que maneira
+                                acontece a
+                                coordenação da pesca artesanal utilizando o desenvolvimento terrítorial sustentável.</p>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+    </main>
+</body>
+
+</html>
